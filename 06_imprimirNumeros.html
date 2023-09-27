@@ -6,11 +6,27 @@
     */
 
     //ENTRADA
-
+    const ni = Number(prompt('Informe o número inicial:').trim());
+    const nf = Number(prompt('Informe o número final:').trim());
+    let impares = [];
+    let pares = [];
     
     //PROCESSAMENTO
-
+    if(ni < nf){
+        for(i = ni; i <= nf; i++ ){
+            if(i % 2 == 1){
+                impares.push(i);
+            }
+            else{
+                pares.push(i);
+            }
+        }
+    }
+    else if(nf < ni){
+        document.write('erro.')
+    }
+    
     
     //SAÍDA
-
+    document.write(`Números pares: ${pares} Números ímpares: ${impares}`);
 </script>

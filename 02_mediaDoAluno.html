@@ -7,10 +7,15 @@
     */
 
     //ENTRADA
-    
-
+    const notas = Number(prompt('Informe quantas notas o aluno obteve:').trim());
+    soma = 0
     //PROCESSAMENTO
-    
+    for (let repetição = 0; repetição < notas; repetição++) {
+        const nota = Number(prompt(`me informe a ${repetição + 1} nota`))
+        soma = soma + nota
+    }
+
+    document.write(`a media do aluno é ${soma/notas}`);
 
     //SAÍDA
 

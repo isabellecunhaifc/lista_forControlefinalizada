@@ -8,10 +8,17 @@
     */
 
     //ENTRADA
-
+    const quantidade = Number(prompt('Informe a quantidade de aluno votantes:').trim());
+    let candidato = [];
 
     //PROCESSAMENTO
-
+    for(i = 1; i <= 3; i++){
+        const candidatos = prompt(`Informe o nome do ${i} candidato:`);
+        candidato.push(candidatos);
+    }
+    for(i = 1; i <= quantidade; i++){
+        const voto = Number(prompt(`Informe o voto do ${i} aluno votante. Candidatos: ${candidato}`))
+    }
 
     //SAÍDA
 

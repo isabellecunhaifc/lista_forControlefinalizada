@@ -6,9 +6,15 @@
     */
 
     //ENTRADA
-
+    let população = 80000;
     
     //PROCESSAMENTO
+    for(i = 0; população <= 200000; i++){
+        população = população + (população * 3/100);
+        if(população >= 200000){
+            document.write(`Demorou ${i} anos para chegar a ${Math.round(população)} habitantes`);
+        } 
+    }
 
     
     //SAÍDA

@@ -6,10 +6,18 @@
     */
 
     //ENTRADA
-
+    let população = 50000;
     
     //PROCESSAMENTO
-    
+    for(i = 1; i <= 10; i++ ){
+        população = população + (população * 1.5/100);
+        if(i == 5){
+            document.write(`População em 5 anos: ${Math.round(população)} <br>`)
+        }
+        else if(i == 10){
+            document.write(`População em 10 anos: ${Math.round(população)}`)
+        }
+    }
 
     //SAÍDA
 

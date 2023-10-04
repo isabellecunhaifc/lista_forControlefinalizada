@@ -6,8 +6,19 @@
     */
 
     //ENTRADA
-    
-
+    let divisor = 0
+    const numero = Number(prompt('Informe um número:').trim());
+    for(i=1; i <= numero; i++){
+        if(numero % i == 0){
+            divisor++
+        }
+    }
+    if(divisor <= 2){
+            document.write(`O número ${numero} é primo`)
+        }
+        else{
+            document.write(`O número ${numero} não é primo`)
+        }
     //PROCESSAMENTO
 
 
